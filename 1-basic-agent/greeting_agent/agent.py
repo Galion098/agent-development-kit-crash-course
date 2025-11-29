@@ -1,4 +1,5 @@
 from google.adk.agents import Agent
+# import os
 
 root_agent = Agent(
     name="greeting_agent",
@@ -9,4 +10,7 @@ root_agent = Agent(
     You are a helpful assistant that greets the user. 
     Ask for the user's name and greet them by name.
     """,
+    # inputs={
+    #     "api_key": os.getenv("GOOGLE_API_KEY")
+    # }
 )
